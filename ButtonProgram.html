@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Color Change</title>
+    <style>
+        body {
+            background-color: white;
+        }
+        .red-btn {
+            width: 100px;
+            height: 70px;
+            margin: 40px;
+            display:block;
+            background-color: red;
+            color: white;
+        }
+
+        .blue-btn {
+            width: 100px;
+            height: 70px;
+            margin: 40px;
+            display:block;
+            background-color: blue;
+            color: white;
+        }
+
+        .green-btn {
+            width: 100px;
+            height: 70px;
+            margin: 40px;
+            display:block;
+            background-color: green;
+            color: white;
+        }
+
+        .reset-btn {
+            width: 100px;
+            height: 70px;
+            margin: 40px;
+            display:block;
+            background-color: transparent;
+            color: black;
+        }
+        .red-btn:hover{
+            width: 120px;
+            height: 80px;
+            transition: 0.2s;
+
+        }
+        .blue-btn:hover{
+            width: 120px;
+            height: 80px;
+            transition: 0.2s;
+
+        }
+        .green-btn:hover{
+            width: 120px;
+            height: 80px;
+            transition: 0.2s;
+
+        }
+        .reset-btn:hover{
+            width: 120px;
+            height: 80px;
+            transition: 0.2s;
+
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <h1>BACKGROUND COLOUR CHANGING BUTTONS</h1>
+    <button class="red-btn" onclick="changeColor('red')">Red</button>
+    <button class="blue-btn" onclick="changeColor('blue')">Blue</button>
+    <button class="green-btn" onclick="changeColor('green')">Green</button>
+    <button class="reset-btn" onclick="resetColor()">Reset</button>
+    </center>
+    <script>
+  
+        const initialBackgroundColor = document.body.style.backgroundColor;
+        function changeColor(color) {
+            document.body.style.backgroundColor = color;
+        }
+        function resetColor() {
+            document.body.style.backgroundColor = initialBackgroundColor;
+        }
+    </script>
+
+</body>
+</html>
